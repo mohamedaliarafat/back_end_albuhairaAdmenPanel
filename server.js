@@ -9,6 +9,7 @@ const userRoutes = require('./routes/userRoutes');
 const orderRoutes = require('./routes/orderRoutes');
 const productRoutes = require('./routes/productRoutes');
 const notificationRoutes = require('./routes/notificationRoutes');
+const dashboardRoutes = require("./routes/dashboardRoutes");
 
 const app = express();
 app.use(cors());
@@ -21,6 +22,7 @@ app.use('/api/orders', orderRoutes);
 app.use('/api/products', productRoutes);
 app.use('/api/notifications', notificationRoutes);
 app.use('/api/delivery', deliveryRoutes);
+app.use("/dashboard", dashboardRoutes);
 
 
 const PORT = process.env.PORT || 6014;

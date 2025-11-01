@@ -10,7 +10,7 @@ mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopol
 
 const createAdmin = async () => {
   const newAdmin = new Admin({
-    phone: '+966547081118', // رقم الجوال مع كود الدولة
+    phone: '+966576595110', // رقم الجوال مع كود الدولة
     name: 'Nasser'
   });
 
